@@ -1,57 +1,80 @@
 <!doctype html>
-<html lang="es" class="h-full">
-<head>
+<html lang="en" class="h-full">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260923-05-29a7a27","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 1. Título que aparece en la pestaña del navegador -->
-  <title>Spelling Bee Challenge - Creado por JOSE VAZQUEZ</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Spelling Bee Challenge</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
   <style>
     * { font-family: 'Fredoka', sans-serif; }
-    
+    :root { box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+
     @keyframes bounce-in {
       0% { transform: scale(0.3); opacity: 0; }
       50% { transform: scale(1.05); }
       70% { transform: scale(0.9); }
       100% { transform: scale(1); opacity: 1; }
     }
-    
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(251, 191, 36, 0.4); }
+      50% { box-shadow: 0 0 40px rgba(251, 191, 36, 0.8); }
+    }
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-10px); }
     }
-    
     @keyframes shake {
       0%, 100% { transform: translateX(0); }
       25% { transform: translateX(-5px); }
       75% { transform: translateX(5px); }
     }
-    
     .bounce-in { animation: bounce-in 0.6s ease-out; }
+    .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
     .float { animation: float 3s ease-in-out infinite; }
     .shake { animation: shake 0.5s ease-in-out; }
 
-    .bee-pattern {
-      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+    .bee-logo-wrap {
+      width: min(9rem, 38vw);
+      height: min(9rem, 38vw);
+      margin: 0 auto 1rem;
+      border-radius: 2rem;
+      background: rgba(255,255,255,.96);
+      box-shadow: 0 18px 35px rgba(120, 53, 15, .28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4.5rem;
     }
-    
+
+    .bee-pattern { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%); }
+    .player-active { transform: scale(1.05); transition: all 0.3s ease; }
+
+    .letter-tile {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 0.15rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+    }
+    .letter-tile.space-tile { background: transparent !important; box-shadow: none; width: 1.25rem; }
+
+    .image-container { position: relative; overflow: hidden; border-radius: 1rem; }
+
     .difficulty-easy { background: linear-gradient(135deg, #10b981, #059669); }
     .difficulty-medium { background: linear-gradient(135deg, #f59e0b, #d97706); }
     .difficulty-hard { background: linear-gradient(135deg, #ef4444, #dc2626); }
-    
-    .difficulty-btn {
-      transition: all 0.3s ease;
-      border: 3px solid transparent;
-    }
+
+    .difficulty-btn { transition: all 0.3s ease; border: 3px solid transparent; }
     .difficulty-btn:hover { transform: scale(1.05); }
-    
+    .difficulty-btn.selected { border-color: white; box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
+
     .flying-bee {
-      position: fixed;
-      z-index: 5;
-      pointer-events: none;
-      font-size: 2rem;
+      position: fixed; z-index: 5; pointer-events: none; font-size: 2rem;
       filter: drop-shadow(0 4px 3px rgba(0,0,0,.2));
       animation: bee-flight 12s linear infinite;
     }
@@ -66,189 +89,208 @@
     }
 
     .reset-confirm-modal {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7); display: none; align-items: center; justify-content: center; z-index: 1000;
     }
     .reset-confirm-modal.active { display: flex; }
+
+    .progress-track { background: rgba(255,255,255,.5); border-radius: 999px; height: 10px; overflow: hidden; }
+    .progress-fill { background: linear-gradient(90deg,#fbbf24,#f59e0b); height: 100%; transition: width .4s ease; }
+
+    .streak-badge {
+      display: inline-flex; align-items: center; gap: .25rem; font-weight: 700;
+      background: rgba(255,255,255,.9); color: #b45309; padding: .25rem .75rem; border-radius: 999px; font-size: .85rem;
+    }
+
+    .icon-btn {
+      width: 2.75rem; height: 2.75rem; border-radius: 999px; display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,.9); box-shadow: 0 4px 10px rgba(0,0,0,.15); font-size: 1.2rem; transition: transform .2s ease;
+    }
+    .icon-btn:hover { transform: scale(1.08); }
   </style>
-</head>
-<body class="h-full overflow-auto">
-  <div id="app" class="min-h-full w-full bee-pattern p-4 flex flex-col justify-between">
-    <span class="flying-bee" aria-hidden="true">🐝</span>
-    <span class="flying-bee bee-two" aria-hidden="true">🐝</span>
-    <span class="flying-bee bee-three" aria-hidden="true">🐝</span>
-
-    <!-- Start Screen -->
-    <div id="start-screen" class="flex flex-col items-center justify-center my-auto py-8">
-      <div class="text-center bounce-in">
-        <div class="text-8xl mb-4 float">🐝</div>
-        <h1 class="text-5xl md:text-6xl font-bold text-white drop-shadow-lg mb-2">Spelling Bee</h1>
-        
-        <!-- 2. Tu nombre o subtítulo de tu web -->
-        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-sky-200">Un juego creado por JOSE VAZQUEZ</h2>
-      </div>
-
-      <div class="bg-white/95 backdrop-blur rounded-3xl p-8 max-w-lg w-full shadow-2xl bounce-in" style="animation-delay: 0.2s">
-        <h3 class="text-2xl font-bold text-amber-800 mb-6 text-center">📖 Cómo jugar</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          <div>
-            <label for="player1-name" class="block text-sm font-bold text-blue-700 mb-2">👤 Jugador 1</label>
-            <input id="player1-name" type="text" maxlength="18" value="Player 1" class="w-full px-4 py-3 text-lg text-center font-semibold border-3 border-blue-300 rounded-xl focus:border-blue-500 focus:outline-none" autocomplete="off">
-          </div>
-          <div>
-            <label for="player2-name" class="block text-sm font-bold text-purple-700 mb-2">👤 Jugador 2</label>
-            <input id="player2-name" type="text" maxlength="18" value="Player 2" class="w-full px-4 py-3 text-lg text-center font-semibold border-3 border-purple-300 rounded-xl focus:border-purple-500 focus:outline-none" autocomplete="off">
-          </div>
-        </div>
-        <ul class="space-y-3 text-gray-700 mb-8">
-          <li class="flex items-start gap-3"><span class="text-2xl">👥</span> <span>Dos jugadores compiten por turnos</span></li>
-          <li class="flex items-start gap-3"><span class="text-2xl">⭐</span> <span>Elige el nivel de dificultad en cada turno</span></li>
-          <li class="flex items-start gap-3"><span class="text-2xl">🔊</span> <span>Escucha la palabra y lee la pista</span></li>
-          <li class="flex items-start gap-3"><span class="text-2xl">✍️</span> <span>Escribe la palabra correctamente en inglés</span></li>
-          <li class="flex items-start gap-3"><span class="text-2xl">🏆</span> <span>¡Gana el jugador con más puntos tras 20 rondas!</span></li>
-        </ul>
-        <button onclick="startGame()" class="w-full py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xl font-bold rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300">🎮 Comenzar Juego</button>
-      </div>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/94916171342f3214.editing_sdk.js" type="text/javascript" integrity="sha512-iD6yxTksfey/7N3Df0f52UtQsuvEgQYXQKioLwfyua/wCe7br8wUuc/pDNnGdXhJ/6CJKJ9sPcWHBNlAjOMhEQ=="></script>
+  <script src="/_sdk/765e1fea0cec97ce.resizing_sdk.js" type="text/javascript" integrity="sha512-IRTJnqww0+HQ5V/LlWEQrlD5SrYHaVvaeVoNe8HYQXoaguzUGheSd9+n9s6WOgaTcEH0g37DuINHZ9aqfzWjlw=="></script>
+ </head>
+ <body data-template-id="__page-root" class="h-full overflow-auto">
+  <div id="app" class="min-h-full w-full bee-pattern p-4">
+   <span class="flying-bee" aria-hidden="true">🐝</span><span class="flying-bee bee-two" aria-hidden="true">🐝</span><span class="flying-bee bee-three" aria-hidden="true">🐝</span> <button id="mute-btn" onclick="toggleMute()" class="icon-btn fixed top-4 right-4 z-20" title="Silenciar sonido" aria-label="Silenciar sonido">🔊</button> <!-- Start Screen -->
+   <div id="start-screen" class="flex flex-col items-center justify-center min-h-full py-8">
+    <button data-template-id="start-music-btn" onclick="toggleMusic()" class="canva-button mb-4 px-5 py-3 bg-white/90 hover:bg-white text-amber-700 font-bold rounded-full shadow-lg transform hover:scale-105 transition-all" aria-pressed="false">🎵 Activar música</button><button data-template-id="start-music-stop-btn" onclick="toggleMusic()" class="canva-button mb-4 px-5 py-3 bg-white/90 hover:bg-white text-amber-700 font-bold rounded-full shadow-lg transform hover:scale-105 transition-all hidden" aria-pressed="true">🔇 Detener música</button>
+    <div class="text-center bounce-in">
+     <div class="bee-logo-wrap float" aria-hidden="true">
+      🐝
+     </div><img data-template-id="school-logo" class="canva-image w-40 h-40 md:w-48 md:h-48 object-contain mx-auto mb-4 drop-shadow-lg" loading="lazy">
+     <h1 data-template-id="main-title" class="canva-text text-5xl md:text-6xl font-bold text-white drop-shadow-lg mb-2"></h1>
+     <h2 data-template-id="subtitle" class="canva-text text-2xl md:text-3xl font-semibold mb-8"></h2>
     </div>
-
-    <!-- Game Screen -->
-    <div id="game-screen" class="hidden min-h-full py-4">
-      <div class="flex justify-end mb-4 px-2">
-        <button onclick="showResetConfirm()" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg shadow-md transform hover:scale-105 transition-all flex items-center gap-2">
-          <span>🔄</span> Reiniciar
-        </button>
+    <div data-template-id="how-to-play-card" class="canva-card bg-white/95 backdrop-blur rounded-3xl p-8 max-w-lg w-full shadow-2xl bounce-in" style="animation-delay: 0.2s">
+     <h3 data-template-id="how-to-play-title" class="canva-text text-2xl font-bold text-amber-800 mb-6 text-center"></h3>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div><label for="player1-name" data-template-id="p1-label" class="canva-text block text-sm font-bold text-blue-700 mb-2"></label> <input id="player1-name" data-template-id="p1-input" type="text" maxlength="18" class="canva-input w-full px-4 py-3 text-lg text-center font-semibold border-3 border-blue-300 rounded-xl focus:border-blue-500 focus:outline-none" autocomplete="off">
       </div>
-      <div class="flex justify-between items-center mb-4 px-2">
-        <div id="player1-card" class="bg-blue-500 rounded-2xl p-4 w-36 md:w-44 text-center shadow-lg transition-all duration-300">
-          <div class="text-3xl mb-1">👤</div>
-          <div id="player1-name-display" class="text-white font-bold text-lg">Player 1</div>
-          <div id="player1-score" class="text-4xl font-bold text-white">0</div>
-          <div class="text-blue-100 text-sm">puntos</div>
-        </div>
-        <div class="bg-white/90 rounded-2xl px-6 py-3 text-center shadow-lg">
-          <div class="text-amber-600 font-semibold text-sm">Ronda</div>
-          <div id="round-display" class="text-3xl font-bold text-amber-800">1/20</div>
-        </div>
-        <div id="player2-card" class="bg-purple-500 rounded-2xl p-4 w-36 md:w-44 text-center shadow-lg transition-all duration-300">
-          <div class="text-3xl mb-1">👤</div>
-          <div id="player2-name-display" class="text-white font-bold text-lg">Player 2</div>
-          <div id="player2-score" class="text-4xl font-bold text-white">0</div>
-          <div class="text-purple-100 text-sm">puntos</div>
-        </div>
+      <div><label for="player2-name" data-template-id="p2-label" class="canva-text block text-sm font-bold text-purple-700 mb-2"></label> <input id="player2-name" data-template-id="p2-input" type="text" maxlength="18" class="canva-input w-full px-4 py-3 text-lg text-center font-semibold border-3 border-purple-300 rounded-xl focus:border-purple-500 focus:outline-none" autocomplete="off">
       </div>
-      
-      <div id="turn-indicator" class="text-center mb-4">
-        <span class="bg-white/90 px-6 py-2 rounded-full font-bold text-lg text-amber-800 shadow-md">
-          🎯 Turno de <span id="current-player-turn">Player 1</span> - Elige dificultad
-        </span>
-      </div>
-
-      <!-- Difficulty Selection -->
-      <div id="difficulty-selection" class="bg-white/95 backdrop-blur rounded-3xl p-6 max-w-2xl mx-auto shadow-2xl mb-4">
-        <h3 class="text-2xl font-bold text-center text-amber-800 mb-6">⭐ Selecciona la dificultad</h3>
-        <div class="flex justify-center gap-4 flex-wrap">
-          <button onclick="selectDifficulty('easy')" class="difficulty-btn px-6 py-4 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold rounded-xl shadow-md">
-            <div class="text-3xl mb-1">⭐</div>
-            <div>Easy</div>
-            <div class="text-sm">(+1 pt)</div>
-          </button>
-          <button onclick="selectDifficulty('medium')" class="difficulty-btn px-6 py-4 bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white font-bold rounded-xl shadow-md">
-            <div class="text-3xl mb-1">⭐⭐</div>
-            <div>Medium</div>
-            <div class="text-sm">(+2 pts)</div>
-          </button>
-          <button onclick="selectDifficulty('hard')" class="difficulty-btn px-6 py-4 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold rounded-xl shadow-md">
-            <div class="text-3xl mb-1">⭐⭐⭐</div>
-            <div>Hard</div>
-            <div class="text-sm">(+3 pts)</div>
-          </button>
-        </div>
-      </div>
-
-      <!-- Main Game Content -->
-      <div id="game-content" class="bg-white/95 backdrop-blur rounded-3xl p-6 max-w-2xl mx-auto shadow-2xl hidden">
-        <div class="flex justify-center mb-4">
-          <span id="difficulty-badge" class="px-4 py-2 rounded-full text-white font-bold text-sm difficulty-easy">⭐ Easy (+1 point)</span>
-        </div>
-        <div id="image-container" class="image-container w-48 h-48 md:w-56 md:h-56 mx-auto mb-4 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center shadow-lg">
-          <div id="word-image" class="text-8xl">🔤</div>
-        </div>
-        <div class="bg-amber-50 rounded-xl p-4 mb-4 border-2 border-amber-200">
-          <div class="text-amber-600 font-semibold text-sm mb-1">💡 Definition:</div>
-          <p id="definition" class="text-gray-700 text-lg text-center font-medium">Loading...</p>
-        </div>
-        <div class="flex justify-center gap-3 mb-6 flex-wrap">
-          <button onclick="pronounceWord()" class="px-5 py-3 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all flex items-center gap-2">
-            <span class="text-xl">🔊</span> Pronounce
-          </button>
-          <button onclick="spellWord()" class="px-5 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all flex items-center gap-2">
-            <span class="text-xl">📢</span> Spell
-          </button>
-        </div>
-        <div class="relative mb-6">
-          <input type="text" id="answer-input" class="w-full px-6 py-4 text-2xl text-center font-bold border-4 border-amber-300 rounded-2xl focus:border-amber-500 focus:outline-none uppercase tracking-widest" placeholder="Type answer..." autocomplete="off" autocapitalize="off" spellcheck="false">
-        </div>
-        <div id="feedback" class="text-center mb-6 text-xl font-bold min-h-8"></div>
-        <div class="flex justify-center gap-3 flex-wrap">
-          <button onclick="checkAnswer()" class="px-10 py-4 text-2xl bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold rounded-xl shadow-lg transform hover:scale-105 transition-all flex items-center gap-3">
-            <span>✓</span> COMPROBAR
-          </button>
-          <button onclick="skipWord()" class="px-6 py-4 bg-gradient-to-r from-gray-400 to-gray-500 hover:from-gray-500 hover:to-gray-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all flex items-center gap-2">
-            <span>⏭️</span> Pasar
-          </button>
-        </div>
-      </div>
+     </div>
+     <ul class="space-y-3 text-gray-700 mb-8">
+      <li class="flex items-start gap-3"><span class="text-2xl">👥</span> <span data-template-id="rule-1" class="canva-text"></span></li>
+      <li class="flex items-start gap-3"><span class="text-2xl">⭐</span> <span data-template-id="rule-2" class="canva-text"></span></li>
+      <li class="flex items-start gap-3"><span class="text-2xl">🔊</span> <span data-template-id="rule-3" class="canva-text"></span></li>
+      <li class="flex items-start gap-3"><span class="text-2xl">✍️</span> <span data-template-id="rule-4" class="canva-text"></span></li>
+      <li class="flex items-start gap-3"><span class="text-2xl">⭐</span> <span data-template-id="rule-5" class="canva-text"></span></li>
+      <li class="flex items-start gap-3"><span class="text-2xl">🔥</span> <span data-template-id="rule-6" class="canva-text"></span></li>
+      <li class="flex items-start gap-3"><span class="text-2xl">🏆</span> <span data-template-id="rule-7" class="canva-text"></span></li>
+     </ul><button data-template-id="start-btn" onclick="startGame()" class="canva-button w-full py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xl font-bold rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300"></button>
     </div>
-
-    <!-- Game Over Screen -->
-    <div id="gameover-screen" class="hidden flex-col items-center justify-center my-auto py-8">
-      <div class="bg-white/95 backdrop-blur rounded-3xl p-8 max-w-lg w-full shadow-2xl text-center bounce-in">
-        <div class="text-6xl mb-4">🏆</div>
-        <h2 class="text-4xl font-bold text-amber-800 mb-2">¡Fin de la partida!</h2>
-        <div id="winner-announcement" class="text-2xl font-bold text-green-600 mb-6"></div>
-        <div class="flex justify-around mb-8">
-          <div class="text-center">
-            <div class="text-4xl mb-2">👤</div>
-            <div id="final-p1-name" class="font-bold text-blue-600 text-lg">Player 1</div>
-            <div id="final-p1-score" class="text-4xl font-bold text-blue-500">0</div>
-            <div class="text-gray-500">puntos</div>
-          </div>
-          <div class="text-5xl text-gray-300 self-center">VS</div>
-          <div class="text-center">
-            <div class="text-4xl mb-2">👤</div>
-            <div id="final-p2-name" class="font-bold text-purple-600 text-lg">Player 2</div>
-            <div id="final-p2-score" class="text-4xl font-bold text-purple-500">0</div>
-            <div class="text-gray-500">puntos</div>
-          </div>
-        </div>
-        <button onclick="goToStart()" class="w-full py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xl font-bold rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300">🎮 Jugar de nuevo</button>
-      </div>
+   </div><!-- Game Screen -->
+   <div id="game-screen" class="hidden min-h-full py-4">
+    <div class="flex justify-end mb-4 px-2">
+     <button data-template-id="reset-btn" onclick="showResetConfirm()" class="canva-button px-4 py-2 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg shadow-md transform hover:scale-105 transition-all flex items-center gap-2"></button>
     </div>
-
-    <!-- 3. Pie de página opcional con tus créditos -->
-    <footer class="text-center text-white/80 font-medium py-2 text-sm">
-      Desarrollado con ❤️ por <span class="font-bold text-white">TU NOMBRE AQUÍ</span>
-    </footer>
+    <div class="flex justify-between items-center mb-2 px-2">
+     <div id="player1-card" data-template-id="p1-card" class="canva-card rounded-2xl p-4 w-36 md:w-44 text-center shadow-lg transition-all duration-300">
+      <div class="text-3xl mb-1">
+       👤
+      </div>
+      <div id="player1-name-display" class="text-white font-bold text-lg">
+       Player 1
+      </div>
+      <div id="player1-score" class="text-4xl font-bold text-white">
+       0
+      </div>
+      <div data-template-id="p1-points-label" class="canva-text text-blue-100 text-sm"></div>
+     </div>
+     <div data-template-id="round-card" class="canva-card bg-white/90 rounded-2xl px-6 py-3 text-center shadow-lg">
+      <div data-template-id="round-label" class="canva-text text-amber-600 font-semibold text-sm"></div>
+      <div id="round-display" class="text-3xl font-bold text-amber-800">
+       1/20
+      </div>
+     </div>
+     <div id="player2-card" data-template-id="p2-card" class="canva-card rounded-2xl p-4 w-36 md:w-44 text-center shadow-lg transition-all duration-300">
+      <div class="text-3xl mb-1">
+       👤
+      </div>
+      <div id="player2-name-display" class="text-white font-bold text-lg">
+       Player 2
+      </div>
+      <div id="player2-score" class="text-4xl font-bold text-white">
+       0
+      </div>
+      <div data-template-id="p2-points-label" class="canva-text text-purple-100 text-sm"></div>
+     </div>
+    </div>
+    <div class="max-w-2xl mx-auto px-2 mb-4">
+     <div class="progress-track">
+      <div id="progress-fill" class="progress-fill" style="width:5%"></div>
+     </div>
+    </div>
+    <div id="turn-indicator" class="text-center mb-2">
+     <span class="bg-white/90 px-6 py-2 rounded-full font-bold text-lg text-amber-800 shadow-md"> 🎯 <span id="current-player-turn">Player 1</span> - <span data-template-id="choose-diff-suffix" class="canva-text"></span> </span>
+    </div>
+    <div class="text-center mb-4">
+     <span id="streak-display" class="streak-badge hidden">🔥 <span id="streak-count">0</span> streak</span>
+    </div>
+    <div id="difficulty-selection" data-template-id="diff-selection-card" class="canva-card bg-white/95 backdrop-blur rounded-3xl p-6 max-w-2xl mx-auto shadow-2xl mb-4">
+     <div class="flex justify-center mb-4"><button data-template-id="difficulty-music-btn" onclick="toggleMusic()" class="canva-button px-5 py-3 bg-amber-100 hover:bg-amber-200 text-amber-800 font-bold rounded-full shadow-md transform hover:scale-105 transition-all" aria-pressed="false">🎵 Activar música</button><button data-template-id="difficulty-music-stop-btn" onclick="toggleMusic()" class="canva-button px-5 py-3 bg-amber-100 hover:bg-amber-200 text-amber-800 font-bold rounded-full shadow-md transform hover:scale-105 transition-all hidden" aria-pressed="true">🔇 Detener música</button>
+     </div>
+     <h3 data-template-id="select-diff-title" class="canva-text text-2xl font-bold text-center text-amber-800 mb-6"></h3>
+     <div class="flex justify-center gap-4 flex-wrap">
+      <button onclick="selectDifficulty('easy')" class="difficulty-btn px-6 py-4 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold rounded-xl shadow-md">
+       <div class="text-3xl mb-1">
+        ⭐
+       </div>
+       <div data-template-id="easy-label" class="canva-text"></div>
+       <div data-template-id="easy-points" class="canva-text text-sm"></div></button> <button onclick="selectDifficulty('medium')" class="difficulty-btn px-6 py-4 bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white font-bold rounded-xl shadow-md">
+       <div class="text-3xl mb-1">
+        ⭐⭐
+       </div>
+       <div data-template-id="medium-label" class="canva-text"></div>
+       <div data-template-id="medium-points" class="canva-text text-sm"></div></button> <button onclick="selectDifficulty('hard')" class="difficulty-btn px-6 py-4 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold rounded-xl shadow-md">
+       <div class="text-3xl mb-1">
+        ⭐⭐⭐
+       </div>
+       <div data-template-id="hard-label" class="canva-text"></div>
+       <div data-template-id="hard-points" class="canva-text text-sm"></div></button>
+     </div>
+    </div>
+    <div id="game-content" class="bg-white/95 backdrop-blur rounded-3xl p-6 max-w-2xl mx-auto shadow-2xl hidden">
+     <div class="flex justify-center mb-4">
+      <span id="difficulty-badge" class="px-4 py-2 rounded-full text-white font-bold text-sm difficulty-easy"> ⭐ Easy (+1 point) </span>
+     </div>
+     <div id="image-container" class="image-container w-48 h-48 md:w-56 md:h-56 mx-auto mb-4 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center shadow-lg">
+      <div id="word-image" class="text-8xl">
+       🔤
+      </div>
+     </div>
+     <div class="bg-amber-50 rounded-xl p-4 mb-4 border-2 border-amber-200">
+      <div data-template-id="definition-label" class="canva-text text-amber-600 font-semibold text-sm mb-1"></div>
+      <p id="definition" class="text-gray-700 text-lg text-center font-medium">Word is loading...</p>
+     </div>
+     <div class="flex justify-center gap-3 mb-6 flex-wrap">
+      <button data-template-id="pronounce-btn" onclick="pronounceWord()" class="canva-button px-5 py-3 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all flex items-center gap-2"></button> <button data-template-id="spell-btn" onclick="spellWord()" class="canva-button px-5 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all flex items-center gap-2"></button> <button data-template-id="hint-btn" onclick="giveHint()" class="canva-button px-5 py-3 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all flex items-center gap-2"></button>
+     </div>
+     <div id="spelling-display" class="text-center mb-4 min-h-12 flex justify-center flex-wrap"></div>
+     <div class="relative mb-6">
+      <input type="text" id="answer-input" data-template-id="answer-input" class="canva-input w-full px-6 py-4 text-2xl text-center font-bold border-4 border-amber-300 rounded-2xl focus:border-amber-500 focus:outline-none uppercase tracking-widest" autocomplete="off" autocapitalize="off" spellcheck="false">
+     </div>
+     <div id="feedback" class="text-center mb-6 text-xl font-bold min-h-8" role="status" aria-live="polite"></div>
+     <div class="flex justify-center gap-3 flex-wrap">
+      <button data-template-id="check-btn" onclick="checkAnswer()" class="canva-button px-10 py-6 text-2xl bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold rounded-xl shadow-lg transform hover:scale-110 transition-all flex items-center gap-3"></button> <button data-template-id="skip-btn" onclick="skipWord()" class="canva-button px-6 py-3 bg-gradient-to-r from-gray-400 to-gray-500 hover:from-gray-500 hover:to-gray-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all flex items-center gap-2"></button>
+     </div>
+    </div>
+   </div><!-- Game Over Screen -->
+   <div id="gameover-screen" class="hidden flex-col items-center justify-center min-h-full py-8">
+    <div class="bg-white/95 backdrop-blur rounded-3xl p-8 max-w-lg w-full shadow-2xl text-center bounce-in">
+     <div class="text-6xl mb-4">
+      🏆
+     </div>
+     <h2 data-template-id="gameover-title" class="canva-text text-4xl font-bold text-amber-800 mb-2"></h2>
+     <div id="winner-announcement" class="text-2xl font-bold text-green-600 mb-6"></div>
+     <div class="flex justify-around mb-8">
+      <div class="text-center">
+       <div class="text-4xl mb-2">
+        👤
+       </div>
+       <div id="final-p1-name" class="font-bold text-blue-600 text-lg">
+        Player 1
+       </div>
+       <div id="final-p1-score" class="text-4xl font-bold text-blue-500">
+        0
+       </div>
+       <div data-template-id="final-p1-points-label" class="canva-text text-gray-500"></div>
+      </div>
+      <div data-template-id="vs-text" class="canva-text text-5xl text-gray-300 self-center"></div>
+      <div class="text-center">
+       <div class="text-4xl mb-2">
+        👤
+       </div>
+       <div id="final-p2-name" class="font-bold text-purple-600 text-lg">
+        Player 2
+       </div>
+       <div id="final-p2-score" class="text-4xl font-bold text-purple-500">
+        0
+       </div>
+       <div data-template-id="final-p2-points-label" class="canva-text text-gray-500"></div>
+      </div>
+     </div><button data-template-id="play-again-btn" onclick="goToStart()" class="canva-button w-full py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xl font-bold rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300"></button>
+    </div>
+   </div>
   </div>
-
-  <!-- Reset Confirmation Modal -->
   <div id="reset-confirm" class="reset-confirm-modal">
-    <div class="bg-white rounded-3xl p-8 max-w-sm w-full mx-4 shadow-2xl text-center">
-      <div class="text-5xl mb-4">🔄</div>
-      <h3 class="text-2xl font-bold text-gray-800 mb-4">¿Reiniciar el juego?</h3>
-      <p class="text-gray-600 mb-6">Se perderán todos los puntos actuales.</p>
-      <div class="flex gap-3 flex-wrap justify-center">
-        <button onclick="confirmReset()" class="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all">Sí, reiniciar</button>
-        <button onclick="cancelReset()" class="px-6 py-3 bg-gray-400 hover:bg-gray-500 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all">Cancelar</button>
-      </div>
+   <div class="bg-white rounded-3xl p-8 max-w-sm w-full mx-4 shadow-2xl text-center">
+    <div class="text-5xl mb-4">
+     🔄
     </div>
+    <h3 data-template-id="reset-title" class="canva-text text-2xl font-bold text-gray-800 mb-4"></h3>
+    <p data-template-id="reset-desc" class="canva-text text-gray-600 mb-6"></p>
+    <div class="flex gap-3 flex-wrap justify-center">
+     <button data-template-id="reset-confirm-btn" onclick="confirmReset()" class="canva-button px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all"></button> <button data-template-id="reset-cancel-btn" onclick="cancelReset()" class="canva-button px-6 py-3 bg-gray-400 hover:bg-gray-500 text-white font-bold rounded-xl shadow-md transform hover:scale-105 transition-all"></button>
+    </div>
+   </div>
   </div>
-
   <script>
     const words = {
       easy: [
@@ -256,9 +298,56 @@
         { word: "face", definition: "The front part of your head", emoji: "😀" },
         { word: "bag", definition: "Something used to carry things", emoji: "👜" },
         { word: "red", definition: "A bright color like an apple", emoji: "🔴" },
+        { word: "girl", definition: "A young female person", emoji: "👧" },
         { word: "fish", definition: "An animal that lives in water", emoji: "🐟" },
-        { word: "sun", definition: "The bright star in our sky", emoji: "🌞" },
+        { word: "cry", definition: "To shed tears when sad", emoji: "😢" },
+        { word: "bed", definition: "A place where you sleep", emoji: "🛏️" },
+        { word: "card", definition: "A small piece of paper with a message", emoji: "💌" },
+        { word: "Ben", definition: "A boy's name", emoji: "👦" },
+        { word: "one", definition: "The number 1", emoji: "1️⃣" },
+        { word: "park", definition: "A place with grass and trees to play", emoji: "🏞️" },
+        { word: "class", definition: "A group of students learning together", emoji: "🏫" },
+        { word: "ball", definition: "A round toy used in games", emoji: "⚽" },
+        { word: "day", definition: "The time when there is light", emoji: "☀️" },
         { word: "car", definition: "A vehicle with four wheels", emoji: "🚗" },
+        { word: "bus", definition: "A large vehicle for carrying people", emoji: "🚌" },
+        { word: "sun", definition: "The bright star in our sky", emoji: "🌞" },
+        { word: "street", definition: "A road in a town or city", emoji: "🛣️" },
+        { word: "horse", definition: "A large animal that people can ride", emoji: "🐴" },
+        { word: "clothes", definition: "Things you wear on your body", emoji: "👕" },
+        { word: "mother", definition: "A female parent", emoji: "👩" },
+        { word: "breakfast", definition: "The first meal of the day", emoji: "🍳" },
+        { word: "nurse", definition: "A person who helps care for sick people", emoji: "🧑‍⚕️" },
+        { word: "gold", definition: "A valuable yellow metal", emoji: "🥇" },
+        { word: "Tony", definition: "A boy's name", emoji: "👦" },
+        { word: "eleven", definition: "The number 11", emoji: "🔢" },
+        { word: "zoo", definition: "A place where many animals are kept", emoji: "🦁" },
+        { word: "question", definition: "Words used to ask something", emoji: "❓" },
+        { word: "picture", definition: "A drawing or photograph", emoji: "🖼️" },
+        { word: "morning", definition: "The early part of the day", emoji: "🌅" },
+        { word: "doll", definition: "A toy that looks like a person", emoji: "🪆" },
+        { word: "drive", definition: "To control and move a car", emoji: "🚙" },
+        { word: "snow", definition: "Soft white ice that falls from the sky", emoji: "❄️" },
+        { word: "teacher", definition: "A person who helps students learn", emoji: "👩‍🏫" },
+        { word: "water", definition: "A clear liquid that people drink", emoji: "💧" },
+        { word: "spider", definition: "A small animal with eight legs", emoji: "🕷️" },
+        { word: "smile", definition: "A happy expression on your face", emoji: "😊" },
+        { word: "jeans", definition: "Trousers made from strong blue cloth", emoji: "👖" },
+        { word: "black", definition: "The darkest color", emoji: "⚫" },
+        { word: "grandpa", definition: "Your mother's or father's father", emoji: "👴" },
+        { word: "carrot", definition: "A long orange vegetable", emoji: "🥕" },
+        { word: "tired", definition: "Needing to rest or sleep", emoji: "😴" },
+        { word: "flower", definition: "The colorful part of a plant", emoji: "🌸" },
+        { word: "plastic", definition: "A light material used to make many things", emoji: "♻️" },
+        { word: "Alex", definition: "A person's name", emoji: "🙂" },
+        { word: "four", definition: "The number 4", emoji: "4️⃣" },
+        { word: "under", definition: "In a lower place than something else", emoji: "⬇️" },
+        { word: "spell", definition: "To say or write the letters of a word", emoji: "🔤" },
+        { word: "sport", definition: "A game or activity with exercise", emoji: "🏅" },
+        { word: "watch", definition: "A small clock worn on your wrist", emoji: "⌚" },
+        { word: "train", definition: "A vehicle that travels on rails", emoji: "🚆" },
+        { word: "boat", definition: "A vehicle that travels on water", emoji: "⛵" },
+        { word: "beach", definition: "A sandy place beside the sea", emoji: "🏖️" },
         { word: "tree", definition: "A tall plant with a trunk and branches", emoji: "🌳" }
       ],
       medium: [
@@ -267,7 +356,87 @@
         { word: "library", definition: "A place with many books to read", emoji: "📖" },
         { word: "garden", definition: "A place where flowers and plants grow", emoji: "🌷" },
         { word: "kitchen", definition: "The room where you cook food", emoji: "🍳" },
-        { word: "bicycle", definition: "A vehicle with two wheels that you pedal", emoji: "🚲" }
+        { word: "bicycle", definition: "A vehicle with two wheels that you pedal", emoji: "🚲" },
+        { word: "mountain", definition: "A very high hill made of rock", emoji: "⛰️" },
+        { word: "hospital", definition: "A place where doctors help sick people", emoji: "🏥" },
+        { word: "dolphin", definition: "A smart sea animal that jumps and plays", emoji: "🐬" },
+        { word: "giraffe", definition: "A tall animal with a very long neck", emoji: "🦒" },
+        { word: "mouth", definition: "The part of your face used for eating and speaking", emoji: "👄" },
+        { word: "T-shirt", definition: "A light shirt with short sleeves", emoji: "👕" },
+        { word: "yellow", definition: "The color of the sun or a banana", emoji: "💛" },
+        { word: "grandfather", definition: "Your mother's or father's father", emoji: "👴" },
+        { word: "sausage", definition: "A long food made from meat", emoji: "🌭" },
+        { word: "living room", definition: "A room where people sit and relax", emoji: "🛋️" },
+        { word: "Lucy", definition: "A girl's name", emoji: "👧" },
+        { word: "thirteen", definition: "The number 13", emoji: "🔢" },
+        { word: "in front of", definition: "Before or ahead of something", emoji: "➡️" },
+        { word: "English", definition: "The language spoken in England and many other places", emoji: "🇬🇧" },
+        { word: "take a picture", definition: "To use a camera to make a photo", emoji: "📸" },
+        { word: "afternoon", definition: "The part of the day after midday", emoji: "🌤️" },
+        { word: "soccer", definition: "A game played by kicking a ball into a goal", emoji: "⚽" },
+        { word: "motorbike", definition: "A two-wheeled vehicle with an engine", emoji: "🏍️" },
+        { word: "shell", definition: "A hard covering found on some animals or at the beach", emoji: "🐚" },
+        { word: "crocodile", definition: "A large reptile with strong jaws", emoji: "🐊" },
+        { word: "feet", definition: "The body parts used for walking", emoji: "🦶" },
+        { word: "glasses", definition: "Lenses worn to help you see", emoji: "👓" },
+        { word: "orange", definition: "A round fruit or its color", emoji: "🍊" },
+        { word: "women", definition: "More than one adult female", emoji: "👩‍👩‍👧" },
+        { word: "ice cream", definition: "A cold, sweet food made from milk", emoji: "🍦" },
+        { word: "dining room", definition: "A room where people eat meals", emoji: "🍽️" },
+        { word: "Grace", definition: "A girl's name", emoji: "👧" },
+        { word: "eighteen", definition: "The number 18", emoji: "🔢" },
+        { word: "bookshop", definition: "A shop where books are sold", emoji: "📚" },
+        { word: "keyboard", definition: "A set of keys used to type", emoji: "⌨️" },
+        { word: "basketball", definition: "A game played by throwing a ball into a hoop", emoji: "🏀" },
+        { word: "helicopter", definition: "An aircraft with spinning blades", emoji: "🚁" },
+        { word: "lorry", definition: "A large vehicle used to carry things", emoji: "🚚" },
+        { word: "sand", definition: "Tiny grains found on beaches", emoji: "🏝️" },
+        { word: "sheep", definition: "A farm animal with wool", emoji: "🐑" },
+        { word: "trousers", definition: "Clothes that cover your legs", emoji: "👖" },
+        { word: "white", definition: "The color of snow or milk", emoji: "⚪" },
+        { word: "mummy", definition: "A child's word for mother", emoji: "👩" },
+        { word: "cake", definition: "A sweet baked food for celebrations", emoji: "🎂" },
+        { word: "painting", definition: "A picture made with paint", emoji: "🖼️" },
+        { word: "Jill", definition: "A girl's name", emoji: "👧" },
+        { word: "twenty", definition: "The number 20", emoji: "🔢" },
+        { word: "playground", definition: "A place where children play", emoji: "🛝" },
+        { word: "puppy", definition: "A young dog", emoji: "🐶" },
+        { word: "straight", definition: "Not curved or bent", emoji: "↕️" },
+        { word: "sweater", definition: "A warm knitted piece of clothing", emoji: "🧥" },
+        { word: "daughter", definition: "A female child", emoji: "👧" },
+        { word: "sandwich", definition: "Food with filling between slices of bread", emoji: "🥪" },
+        { word: "stomach-ache", definition: "Pain in your stomach", emoji: "🤕" },
+        { word: "CD player", definition: "A machine that plays music from CDs", emoji: "💿" },
+        { word: "Charlie", definition: "A person's name", emoji: "🙂" },
+        { word: "hundred", definition: "The number 100", emoji: "💯" },
+        { word: "shopping centre", definition: "A place with many shops", emoji: "🛍️" },
+        { word: "website", definition: "A place on the internet", emoji: "🌐" },
+        { word: "comic book", definition: "A book with stories told in pictures", emoji: "📕" },
+        { word: "Wednesday", definition: "The day after Tuesday", emoji: "📅" },
+        { word: "bus station", definition: "A place where buses arrive and leave", emoji: "🚏" },
+        { word: "weather", definition: "What the air outside is like", emoji: "🌦️" },
+        { word: "farmer", definition: "A person who grows food or keeps animals", emoji: "👨‍🌾" },
+        { word: "waterfall", definition: "Water falling over the edge of a rock", emoji: "💦" },
+        { word: "kangaroo", definition: "An Australian animal that jumps", emoji: "🦘" },
+        { word: "moustache", definition: "Hair growing above a man's upper lip", emoji: "🧔" },
+        { word: "scarf", definition: "A warm piece of clothing worn around the neck", emoji: "🧣" },
+        { word: "grandparent", definition: "A grandmother or grandfather", emoji: "👵" },
+        { word: "thirsty", definition: "Needing or wanting a drink", emoji: "🥤" },
+        { word: "toothbrush", definition: "A brush used to clean your teeth", emoji: "🪥" },
+        { word: "Vicky", definition: "A girl's name", emoji: "👧" },
+        { word: "sixth", definition: "Coming after the fifth", emoji: "6️⃣" },
+        { word: "supermarket", definition: "A large shop selling food and other things", emoji: "🛒" },
+        { word: "mistake", definition: "Something done incorrectly", emoji: "❌" },
+        { word: "go shopping", definition: "To visit shops to buy things", emoji: "🛒" },
+        { word: "yesterday", definition: "The day before today", emoji: "📆" },
+        { word: "driver", definition: "A person who drives a vehicle", emoji: "🚗" },
+        { word: "pirate", definition: "A sailor who steals from ships", emoji: "🏴‍☠️" },
+        { word: "countryside", definition: "Land outside towns and cities", emoji: "🌾" },
+        { word: "Coffee", definition: "A hot drink made from roasted beans", emoji: "☕" },
+        { word: "downstairs", definition: "On or going to a lower floor", emoji: "⬇️" },
+        { word: "homework", definition: "School work done at home", emoji: "📚" },
+        { word: "DVD player", definition: "A machine that plays DVDs", emoji: "📀" },
+        { word: "windy", definition: "Having a lot of moving air", emoji: "🌬️" }
       ],
       hard: [
         { word: "beautiful", definition: "Very pretty to look at", emoji: "🌺" },
@@ -275,134 +444,407 @@
         { word: "dinosaur", definition: "A big animal that lived long ago", emoji: "🦕" },
         { word: "strawberry", definition: "A small red fruit with seeds outside", emoji: "🍓" },
         { word: "submarine", definition: "A boat that travels under water", emoji: "🚤" },
-        { word: "astronaut", definition: "A person who travels to space", emoji: "👨‍🚀" }
+        { word: "vegetables", definition: "Healthy plants that you eat like carrots", emoji: "🥕" },
+        { word: "astronaut", definition: "A person who travels to space", emoji: "👨‍🚀" },
+        { word: "instrument", definition: "Something you use to make music", emoji: "🎸" },
+        { word: "temperature", definition: "How hot or cold something is", emoji: "🌡️" },
+        { word: "adventure", definition: "An exciting trip or experience", emoji: "🗺️" },
+        { word: "extinct", definition: "No longer living anywhere", emoji: "🚫" },
+        { word: "necklace", definition: "Jewellery worn around the neck", emoji: "📿" },
+        { word: "spotted", definition: "Having small round marks", emoji: "🔵" },
+        { word: "surname", definition: "The family name after your first name", emoji: "🪪" },
+        { word: "biscuit", definition: "A small sweet baked snack", emoji: "🍪" },
+        { word: "chemist", definition: "A shop that sells medicine", emoji: "💊" },
+        { word: "envelope", definition: "A paper cover for a letter", emoji: "✉️" },
+        { word: "Richard", definition: "A boy's name", emoji: "👦" },
+        { word: "thousand", definition: "The number 1,000", emoji: "🔢" },
+        { word: "London", definition: "The capital city of the United Kingdom", emoji: "🇬🇧" },
+        { word: "rucksack", definition: "A bag carried on your back", emoji: "🎒" },
+        { word: "flashlight", definition: "A small light you can carry", emoji: "🔦" },
+        { word: "o'clock", definition: "Used when telling the exact hour", emoji: "🕐" },
+        { word: "crown", definition: "A special hat worn by a king or queen", emoji: "👑" },
+        { word: "fire engine", definition: "A vehicle used by firefighters", emoji: "🚒" },
+        { word: "foggy", definition: "Full of thick mist", emoji: "🌫️" },
+        { word: "photographer", definition: "A person who takes photographs", emoji: "📷" },
+        { word: "pyramid", definition: "A building with a pointed top", emoji: "🔺" },
+        { word: "umbrella", definition: "Something used to keep rain off you", emoji: "☂️" },
+        { word: "husband", definition: "A married man", emoji: "🤵" },
+        { word: "flour", definition: "A powder used for making bread and cakes", emoji: "🌾" },
+        { word: "cut", definition: "An injury made by something sharp", emoji: "🩹" },
+        { word: "key", definition: "An object used to open a lock", emoji: "🔑" },
+        { word: "glass", definition: "A container used for drinking", emoji: "🥛" },
+        { word: "Michael", definition: "A boy's name", emoji: "👦" },
+        { word: "one hundred and two", definition: "The number 102", emoji: "💯" },
+        { word: "castle", definition: "A large strong building where kings lived", emoji: "🏰" },
+        { word: "language", definition: "A way people communicate with words", emoji: "🗣️" },
+        { word: "volleyball", definition: "A game played by hitting a ball over a net", emoji: "🏐" },
+        { word: "Christmas", definition: "A holiday celebrated on December 25th", emoji: "🎄" },
+        { word: "wheel", definition: "A round object that turns to help vehicles move", emoji: "🛞" },
+        { word: "factory", definition: "A building where things are made", emoji: "🏭" },
+        { word: "desert", definition: "A very dry place with little rain", emoji: "🏜️" },
+        { word: "pocket", definition: "A small part of clothing used to carry things", emoji: "👖" },
+        { word: "partner", definition: "A person who works or does something with you", emoji: "🤝" },
+        { word: "piece", definition: "One part of something", emoji: "🧩" },
+        { word: "stamp", definition: "A small label put on a letter", emoji: "📮" },
+        { word: "Betty", definition: "A girl's name", emoji: "👧" },
+        { word: "east", definition: "The direction where the sun rises", emoji: "🧭" },
+        { word: "bridge", definition: "A structure that goes over water or a road", emoji: "🌉" },
+        { word: "scissors", definition: "A tool used for cutting", emoji: "✂️" },
+        { word: "snowboarding", definition: "Sliding down snow on a board", emoji: "🏂" },
+        { word: "autumn", definition: "The season after summer", emoji: "🍂" },
+        { word: "passenger", definition: "A person travelling in a vehicle", emoji: "🧳" },
+        { word: "businesswoman", definition: "A woman who works in business", emoji: "👩‍💼" },
+        { word: "building", definition: "A structure where people live or work", emoji: "🏢" },
+        { word: "environment", definition: "The natural world around us", emoji: "🌍" },
+        { word: "butterfly", definition: "An insect with colorful wings", emoji: "🦋" },
+        { word: "sunglasses", definition: "Glasses that protect eyes from bright sun", emoji: "🕶️" },
+        { word: "get married", definition: "To become husband and wife or partners", emoji: "💍" },
+        { word: "chopsticks", definition: "Two sticks used for eating food", emoji: "🥢" },
+        { word: "fall over", definition: "To lose balance and fall down", emoji: "🤸" },
+        { word: "fridge", definition: "A cold machine used to keep food fresh", emoji: "🧊" },
+        { word: "William", definition: "A boy's name", emoji: "👦" },
+        { word: "twenty fourth", definition: "Coming after the twenty third", emoji: "2️⃣4️⃣" },
+        { word: "post office", definition: "A place where you send letters and parcels", emoji: "🏤" },
+        { word: "university", definition: "A place where adults study", emoji: "🎓" },
+        { word: "tape recorder", definition: "A machine that records and plays sound", emoji: "📼" },
+        { word: "January", definition: "The first month of the year", emoji: "🗓️" },
+        { word: "midday", definition: "Twelve o'clock in the daytime", emoji: "🌞" },
+        { word: "ambulance", definition: "A vehicle that takes sick people to hospital", emoji: "🚑" },
+        { word: "office", definition: "A place where people work", emoji: "💼" },
+        { word: "tomorrow", definition: "The day after today", emoji: "📅" },
+        { word: "cheese", definition: "A food made from milk", emoji: "🧀" },
+        { word: "headteacher", definition: "The leader of a school", emoji: "👩‍🏫" },
+        { word: "circus", definition: "A show with performers and animals", emoji: "🎪" },
+        { word: "screen", definition: "A flat surface that shows pictures", emoji: "🖥️" },
+        { word: "knife", definition: "A sharp tool used for cutting", emoji: "🔪" },
+        { word: "gloves", definition: "Clothing worn on your hands", emoji: "🧤" },
+        { word: "shorts", definition: "Short trousers that cover the legs partly", emoji: "🩳" },
+        { word: "swan", definition: "A large white bird that swims", emoji: "🦢" },
+        { word: "secretary", definition: "A person who helps with office work", emoji: "🧑‍💼" },
+        { word: "traffic", definition: "Vehicles moving on roads", emoji: "🚦" },
+        { word: "August", definition: "The eighth month of the year", emoji: "🗓️" },
+        { word: "suitcase", definition: "A case used for carrying clothes when travelling", emoji: "🧳" },
+        { word: "geography", definition: "The study of places and the Earth", emoji: "🌍" },
+        { word: "Sarah", definition: "A girl's name", emoji: "👧" },
+        { word: "pepper", definition: "A spicy fruit used to add flavor to food", emoji: "🌶️" }
       ]
     };
 
-    let p1Name = "Player 1", p2Name = "Player 2";
-    let p1Score = 0, p2Score = 0;
-    let currentRound = 1, currentPlayer = 1;
-    let currentWordObj = null, currentDifficulty = 'easy';
-    const MAX_ROUNDS = 20;
+    let gameState = {
+      player1Score: 0,
+      player2Score: 0,
+      currentPlayer: 1,
+      player1Name: 'Player 1',
+      player2Name: 'Player 2',
+      currentRound: 1,
+      totalRounds: 20,
+      currentWord: null,
+      currentDifficulty: null,
+      usedWords: { easy: [], medium: [], hard: [] },
+      wordPronounced: false,
+      streak: 0,
+      muted: false
+    };
 
-    function startGame() {
-      p1Name = document.getElementById('player1-name').value.trim() || "Player 1";
-      p2Name = document.getElementById('player2-name').value.trim() || "Player 2";
-      p1Score = 0; p2Score = 0;
-      currentRound = 1; currentPlayer = 1;
-
-      document.getElementById('player1-name-display').innerText = p1Name;
-      document.getElementById('player2-name-display').innerText = p2Name;
-      updateScores();
-
-      document.getElementById('start-screen').classList.add('hidden');
-      document.getElementById('game-screen').classList.remove('hidden');
-      setupTurn();
+    function toggleMute() {
+      gameState.muted = !gameState.muted;
+      document.getElementById('mute-btn').textContent = gameState.muted ? '🔇' : '🔊';
+      if (gameState.muted && 'speechSynthesis' in window) window.speechSynthesis.cancel();
     }
 
-    function setupTurn() {
-      if (currentRound > MAX_ROUNDS) {
-        endGame();
-        return;
-      }
-      document.getElementById('round-display').innerText = `${currentRound}/${MAX_ROUNDS}`;
-      document.getElementById('current-player-turn').innerText = currentPlayer === 1 ? p1Name : p2Name;
-      
-      document.getElementById('difficulty-selection').classList.remove('hidden');
-      document.getElementById('game-content').classList.add('hidden');
-      document.getElementById('feedback').innerText = '';
-      document.getElementById('answer-input').value = '';
-
-      if (currentPlayer === 1) {
-        document.getElementById('player1-card').classList.add('ring-4', 'ring-amber-300');
-        document.getElementById('player2-card').classList.remove('ring-4', 'ring-amber-300');
-      } else {
-        document.getElementById('player2-card').classList.add('ring-4', 'ring-amber-300');
-        document.getElementById('player1-card').classList.remove('ring-4', 'ring-amber-300');
+    let audioContext;
+    let musicPlaying = false;
+    let musicTimer = null;
+    function toggleMusic() {
+      musicPlaying = !musicPlaying;
+      document.querySelectorAll('[data-template-id="start-music-btn"], [data-template-id="difficulty-music-btn"]').forEach(button => button.classList.toggle('hidden', musicPlaying));
+      document.querySelectorAll('[data-template-id="start-music-stop-btn"], [data-template-id="difficulty-music-stop-btn"]').forEach(button => button.classList.toggle('hidden', !musicPlaying));
+      if (musicPlaying) {
+        playMusicLoop();
+      } else if (musicTimer) {
+        clearTimeout(musicTimer);
+        musicTimer = null;
       }
     }
+    function playMusicLoop() {
+      if (!musicPlaying || gameState.muted) return;
+      try {
+        audioContext = audioContext || new (window.AudioContext || window.webkitAudioContext)();
+        const now = audioContext.currentTime;
+        [261.63, 329.63, 392, 523.25].forEach((frequency, index) => {
+          const oscillator = audioContext.createOscillator();
+          const gain = audioContext.createGain();
+          oscillator.type = 'sine';
+          oscillator.frequency.value = frequency;
+          gain.gain.setValueAtTime(0.0001, now + index * 0.22);
+          gain.gain.exponentialRampToValueAtTime(0.035, now + index * 0.22 + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + index * 0.22 + 0.18);
+          oscillator.connect(gain);
+          gain.connect(audioContext.destination);
+          oscillator.start(now + index * 0.22);
+          oscillator.stop(now + index * 0.22 + 0.2);
+        });
+        musicTimer = setTimeout(playMusicLoop, 1100);
+      } catch (error) {}
+    }
+    function playFeedbackSound(type) {
+      if (gameState.muted) return;
+      try {
+        audioContext = audioContext || new (window.AudioContext || window.webkitAudioContext)();
+        const now = audioContext.currentTime;
+        const notes = type === 'success' ? [523.25, 659.25, 783.99] : [220, 174.61];
+        notes.forEach((frequency, index) => {
+          const oscillator = audioContext.createOscillator();
+          const gain = audioContext.createGain();
+          oscillator.type = type === 'success' ? 'sine' : 'triangle';
+          oscillator.frequency.value = frequency;
+          gain.gain.setValueAtTime(0.0001, now + index * 0.11);
+          gain.gain.exponentialRampToValueAtTime(0.16, now + index * 0.11 + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + index * 0.11 + 0.2);
+          oscillator.connect(gain);
+          gain.connect(audioContext.destination);
+          oscillator.start(now + index * 0.11);
+          oscillator.stop(now + index * 0.11 + 0.22);
+        });
+      } catch (error) {}
+    }
 
-    function selectDifficulty(level) {
-      currentDifficulty = level;
-      const list = words[level];
-      currentWordObj = list[Math.floor(Math.random() * list.length)];
-
-      const badge = document.getElementById('difficulty-badge');
-      badge.className = `px-4 py-2 rounded-full text-white font-bold text-sm difficulty-${level}`;
-      const pts = level === 'easy' ? 1 : level === 'medium' ? 2 : 3;
-      badge.innerText = `⭐ ${level.toUpperCase()} (+${pts} pt${pts > 1 ? 's' : ''})`;
-
-      document.getElementById('word-image').innerText = currentWordObj.emoji;
-      document.getElementById('definition').innerText = currentWordObj.definition;
-
-      document.getElementById('difficulty-selection').classList.add('hidden');
-      document.getElementById('game-content').classList.remove('hidden');
-
-      pronounceWord();
+    function speak(text, rate = 0.62) {
+      return new Promise((resolve) => {
+        if (gameState.muted) { resolve(); return; }
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(text);
+          const voices = window.speechSynthesis.getVoices();
+          const englishVoice = voices.find(voice => /^en-(US|GB|AU|CA)\b/i.test(voice.lang) && /Samantha|Karen|Daniel|Google|Microsoft|Natural|Premium/i.test(voice.name))
+            || voices.find(voice => /^en-(US|GB|AU|CA)\b/i.test(voice.lang))
+            || voices.find(voice => /^en\b/i.test(voice.lang));
+          utterance.voice = englishVoice || null;
+          utterance.lang = englishVoice?.lang || 'en-US';
+          utterance.rate = rate;
+          utterance.pitch = 1;
+          utterance.volume = 1;
+          utterance.onend = resolve;
+          utterance.onerror = resolve;
+          window.speechSynthesis.speak(utterance);
+        } else {
+          resolve();
+        }
+      });
     }
 
     function pronounceWord() {
-      if ('speechSynthesis' in window && currentWordObj) {
-        window.speechSynthesis.cancel();
-        const msg = new SpeechSynthesisUtterance(currentWordObj.word);
-        msg.lang = 'en-US';
-        window.speechSynthesis.speak(msg);
-      }
+      if (gameState.currentWord) speak(gameState.currentWord.word, 0.58);
     }
 
-    function spellWord() {
-      if ('speechSynthesis' in window && currentWordObj) {
-        window.speechSynthesis.cancel();
-        const letters = currentWordObj.word.split('').join(', ');
-        const msg = new SpeechSynthesisUtterance(letters);
-        msg.lang = 'en-US';
-        msg.rate = 0.8;
-        window.speechSynthesis.speak(msg);
+    async function spellWord() {
+      if (!gameState.currentWord) return;
+      const word = gameState.currentWord.word;
+      const display = document.getElementById('spelling-display');
+      display.innerHTML = '';
+      await speak(word, 0.58);
+      await new Promise(r => setTimeout(r, 500));
+      for (let i = 0; i < word.length; i++) {
+        const ch = word[i];
+        const tile = document.createElement('span');
+        if (ch === ' ') {
+          tile.className = 'letter-tile space-tile bounce-in';
+        } else {
+          tile.className = 'letter-tile bg-amber-400 text-amber-900 bounce-in';
+          tile.textContent = ch.toUpperCase();
+          await speak(ch, 0.52);
+        }
+        display.appendChild(tile);
+        await new Promise(r => setTimeout(r, 300));
+      }
+      setTimeout(() => { display.innerHTML = ''; }, 3000);
+    }
+
+    function giveHint() {
+      if (!gameState.currentWord) return;
+      const word = gameState.currentWord.word;
+      const feedback = document.getElementById('feedback');
+      feedback.className = 'text-center mb-6 text-xl font-bold text-pink-500';
+      feedback.innerHTML = `💡 It starts with "<span class="text-amber-700">${word[0].toUpperCase()}</span>" and has ${word.replace(/ /g,'').length} letters`;
+    }
+
+    function selectDifficulty(difficulty) {
+      gameState.currentDifficulty = difficulty;
+      document.getElementById('difficulty-selection').classList.add('hidden');
+      document.getElementById('game-content').classList.remove('hidden');
+      getNewWord(difficulty);
+    }
+
+    function getRandomWord(difficulty) {
+      const wordList = words[difficulty];
+      const used = gameState.usedWords[difficulty];
+      let availableWords = wordList.filter(w => !used.includes(w.word));
+      if (availableWords.length === 0) {
+        gameState.usedWords[difficulty] = [];
+        availableWords = wordList;
+      }
+      const wordObj = availableWords[Math.floor(Math.random() * availableWords.length)];
+      gameState.usedWords[difficulty].push(wordObj.word);
+      return { ...wordObj, difficulty };
+    }
+
+    function getNewWord(difficulty) {
+      const wordData = getRandomWord(difficulty);
+      gameState.currentWord = wordData;
+      gameState.currentDifficulty = wordData.difficulty;
+      gameState.wordPronounced = false;
+
+      document.getElementById('definition').textContent = wordData.definition;
+      document.getElementById('word-image').textContent = wordData.emoji;
+      const input = document.getElementById('answer-input');
+      input.value = '';
+      document.getElementById('feedback').textContent = '';
+      document.getElementById('spelling-display').innerHTML = '';
+
+      const badge = document.getElementById('difficulty-badge');
+      badge.className = 'px-4 py-2 rounded-full text-white font-bold text-sm ';
+      if (wordData.difficulty === 'easy') { badge.className += 'difficulty-easy'; badge.innerHTML = '⭐ Easy (+1 point)'; }
+      else if (wordData.difficulty === 'medium') { badge.className += 'difficulty-medium'; badge.innerHTML = '⭐⭐ Medium (+2 points)'; }
+      else { badge.className += 'difficulty-hard'; badge.innerHTML = '⭐⭐⭐ Hard (+3 points)'; }
+
+      setTimeout(() => { pronounceWord(); input.focus(); }, 500);
+    }
+
+    document.getElementById('answer-input').addEventListener('input', function(e) {
+      if (e.target.value.length === 1 && !gameState.wordPronounced && gameState.currentWord) {
+        gameState.wordPronounced = true;
+        pronounceWord();
+      }
+    });
+
+    function updateStreakDisplay() {
+      const el = document.getElementById('streak-display');
+      const count = document.getElementById('streak-count');
+      if (gameState.streak >= 2) {
+        el.classList.remove('hidden');
+        count.textContent = gameState.streak;
+      } else {
+        el.classList.add('hidden');
       }
     }
 
     function checkAnswer() {
-      const input = document.getElementById('answer-input').value.trim().toLowerCase();
-      const target = currentWordObj.word.toLowerCase();
+      if (!gameState.currentWord) return;
+      const input = document.getElementById('answer-input');
+      const answer = input.value.trim().toLowerCase().replace(/\s+/g, ' ');
+      const correct = gameState.currentWord.word.toLowerCase().replace(/\s+/g, ' ');
       const feedback = document.getElementById('feedback');
 
-      if (!input) return;
+      if (answer === correct) {
+        playFeedbackSound('success');
+        gameState.streak++;
+        let points = gameState.currentDifficulty === 'easy' ? 1 : gameState.currentDifficulty === 'medium' ? 2 : 3;
+        let bonusMsg = '';
+        if (gameState.streak > 0 && gameState.streak % 3 === 0) {
+          points += 1;
+          bonusMsg = ' 🔥 +1 streak bonus!';
+        }
+        feedback.className = 'text-center mb-6 text-xl font-bold text-green-500 bounce-in';
+        feedback.innerHTML = `✅ Correct! Well done!${bonusMsg}`;
 
-      if (input === target) {
-        const pts = currentDifficulty === 'easy' ? 1 : currentDifficulty === 'medium' ? 2 : 3;
-        if (currentPlayer === 1) p1Score += pts;
-        else p2Score += pts;
-
-        feedback.className = "text-center mb-6 text-xl font-bold min-h-8 text-green-600";
-        feedback.innerText = "✨ ¡Correcto! Excelente.";
-        updateScores();
-        setTimeout(nextTurn, 1500);
+        if (gameState.currentPlayer === 1) {
+          gameState.player1Score += points;
+          document.getElementById('player1-score').textContent = gameState.player1Score;
+        } else {
+          gameState.player2Score += points;
+          document.getElementById('player2-score').textContent = gameState.player2Score;
+        }
+        updateStreakDisplay();
+        setTimeout(() => nextTurn(), 1500);
       } else {
-        feedback.className = "text-center mb-6 text-xl font-bold min-h-8 text-red-600 shake";
-        feedback.innerText = "❌ Inténtalo de nuevo o pasa de palabra.";
+        playFeedbackSound('error');
+        gameState.streak = 0;
+        updateStreakDisplay();
+        feedback.className = 'text-center mb-6 text-xl font-bold text-red-500 shake';
+        feedback.innerHTML = `❌ Incorrect! The word was: <span class="text-amber-600">${gameState.currentWord.word.toUpperCase()}</span>`;
+        input.classList.add('shake');
+        setTimeout(() => input.classList.remove('shake'), 500);
+        setTimeout(() => nextTurn(), 2000);
       }
     }
 
     function skipWord() {
+      if (!gameState.currentWord) return;
+      playFeedbackSound('error');
+      gameState.streak = 0;
+      updateStreakDisplay();
       const feedback = document.getElementById('feedback');
-      feedback.className = "text-center mb-6 text-xl font-bold min-h-8 text-amber-600";
-      feedback.innerText = `La palabra era "${currentWordObj.word.toUpperCase()}".`;
-      setTimeout(nextTurn, 2000);
+      feedback.className = 'text-center mb-6 text-xl font-bold text-gray-500';
+      feedback.innerHTML = `⏭️ Skipped! The word was: <span class="text-amber-600">${gameState.currentWord.word.toUpperCase()}</span>`;
+      setTimeout(() => nextTurn(), 1500);
+    }
+
+    function updateProgressBar() {
+      const pct = Math.min(100, Math.round((gameState.currentRound / gameState.totalRounds) * 100));
+      document.getElementById('progress-fill').style.width = pct + '%';
     }
 
     function nextTurn() {
-      if (currentPlayer === 1) {
-        currentPlayer = 2;
+      gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
+      document.getElementById('current-player-turn').textContent = gameState.currentPlayer === 1 ? gameState.player1Name : gameState.player2Name;
+
+      const p1Card = document.getElementById('player1-card');
+      const p2Card = document.getElementById('player2-card');
+      if (gameState.currentPlayer === 1) {
+        p1Card.classList.add('player-active', 'pulse-glow');
+        p2Card.classList.remove('player-active', 'pulse-glow');
       } else {
-        currentPlayer = 1;
-        currentRound++;
+        p2Card.classList.add('player-active', 'pulse-glow');
+        p1Card.classList.remove('player-active', 'pulse-glow');
       }
-      setupTurn();
+
+      if (gameState.currentPlayer === 1) {
+        gameState.currentRound++;
+        document.getElementById('round-display').textContent = `${gameState.currentRound}/20`;
+        updateProgressBar();
+        if (gameState.currentRound > gameState.totalRounds) { endGame(); return; }
+      }
+
+      document.getElementById('game-content').classList.add('hidden');
+      document.getElementById('difficulty-selection').classList.remove('hidden');
+      document.querySelectorAll('.difficulty-btn').forEach(btn => btn.classList.remove('selected'));
     }
 
-    function updateScores() {
-      document.getElementById('player1-score').innerText = p1Score;
-      document.getElementById('player2-score').innerText = p2Score;
+    function showResetConfirm() { document.getElementById('reset-confirm').classList.add('active'); }
+    function confirmReset() { document.getElementById('reset-confirm').classList.remove('active'); goToStart(); }
+    function cancelReset() { document.getElementById('reset-confirm').classList.remove('active'); }
+
+    function startGame() {
+      gameState.player1Name = document.getElementById('player1-name').value.trim() || 'Player 1';
+      gameState.player2Name = document.getElementById('player2-name').value.trim() || 'Player 2';
+      document.getElementById('player1-name-display').textContent = gameState.player1Name;
+      document.getElementById('player2-name-display').textContent = gameState.player2Name;
+      document.getElementById('final-p1-name').textContent = gameState.player1Name;
+      document.getElementById('final-p2-name').textContent = gameState.player2Name;
+      document.getElementById('current-player-turn').textContent = gameState.player1Name;
+
+      document.getElementById('start-screen').classList.add('hidden');
+      document.getElementById('game-screen').classList.remove('hidden');
+      document.getElementById('gameover-screen').classList.add('hidden');
+
+      gameState.player1Score = 0;
+      gameState.player2Score = 0;
+      gameState.currentPlayer = 1;
+      gameState.currentRound = 1;
+      gameState.usedWords = { easy: [], medium: [], hard: [] };
+      gameState.streak = 0;
+      updateStreakDisplay();
+
+      document.getElementById('player1-score').textContent = '0';
+      document.getElementById('player2-score').textContent = '0';
+      document.getElementById('round-display').textContent = '1/20';
+      updateProgressBar();
+
+      document.getElementById('player1-card').classList.add('player-active', 'pulse-glow');
+      document.getElementById('player2-card').classList.remove('player-active', 'pulse-glow');
+
+      document.getElementById('difficulty-selection').classList.remove('hidden');
+      document.getElementById('game-content').classList.add('hidden');
     }
 
     function endGame() {
@@ -410,29 +852,33 @@
       document.getElementById('gameover-screen').classList.remove('hidden');
       document.getElementById('gameover-screen').classList.add('flex');
 
-      document.getElementById('final-p1-name').innerText = p1Name;
-      document.getElementById('final-p1-score').innerText = p1Score;
-      document.getElementById('final-p2-name').innerText = p2Name;
-      document.getElementById('final-p2-score').innerText = p2Score;
+      document.getElementById('final-p1-score').textContent = gameState.player1Score;
+      document.getElementById('final-p2-score').textContent = gameState.player2Score;
 
-      const announce = document.getElementById('winner-announcement');
-      if (p1Score > p2Score) announce.innerText = `🎉 ¡Gana ${p1Name}!`;
-      else if (p2Score > p1Score) announce.innerText = `🎉 ¡Gana ${p2Name}!`;
-      else announce.innerText = "🤝 ¡Empate!";
+      const announcement = document.getElementById('winner-announcement');
+      if (gameState.player1Score > gameState.player2Score) {
+        announcement.innerHTML = `🎉 ${gameState.player1Name} Wins! 🎉`;
+        announcement.className = 'text-2xl font-bold text-blue-600 mb-6';
+      } else if (gameState.player2Score > gameState.player1Score) {
+        announcement.innerHTML = `🎉 ${gameState.player2Name} Wins! 🎉`;
+        announcement.className = 'text-2xl font-bold text-purple-600 mb-6';
+      } else {
+        announcement.innerHTML = "🤝 It's a Tie! 🤝";
+        announcement.className = 'text-2xl font-bold text-amber-600 mb-6';
+      }
+      speak(announcement.textContent.replace(/🎉|🤝/g, ''));
     }
 
-    function showResetConfirm() { document.getElementById('reset-confirm').classList.add('active'); }
-    function cancelReset() { document.getElementById('reset-confirm').classList.remove('active'); }
-    function confirmReset() { cancelReset(); startGame(); }
     function goToStart() {
       document.getElementById('gameover-screen').classList.add('hidden');
       document.getElementById('gameover-screen').classList.remove('flex');
+      document.getElementById('game-screen').classList.add('hidden');
       document.getElementById('start-screen').classList.remove('hidden');
     }
 
-    document.getElementById('answer-input')?.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') checkAnswer();
+    document.getElementById('answer-input').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); checkAnswer(); }
     });
   </script>
-</body>
+ </body>
 </html>
